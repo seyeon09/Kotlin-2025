@@ -30,12 +30,29 @@ class MainActivity : ComponentActivity() {
         week02Variables()
     }
 }
-fun week02Functions(){
+fun week02Functions() {
     println("week02 Functions")
 
-    fun greet (name: String) = "Hello, $name!"
+    //fun greet (name: String) = "Hello, $name!"
 
-    println(greet("Android Developer"))git
+    //println(greet("Android Developer"))
+
+    println(" == Kotlin Functions == ")
+
+    fun greet(name: String): String { // 위 greet 함수와 같지만 다르게 쓸 수 있음
+        return "Hello, $name"
+    }
+
+    fun add(a:Int, b:Int) = a+b
+
+    fun introduce(name: String,age:Int=19){ // name 지정 안해주면 19로 고정
+        println("My name is $name and I`m $age years old")
+    }
+
+    println(greet("kotlin"))
+    println("sum : ${add(5,-71)}")
+    introduce("park")
+    introduce("kim",29)
 }
 fun week02Variables(){
 //    println("week02 Variables")
