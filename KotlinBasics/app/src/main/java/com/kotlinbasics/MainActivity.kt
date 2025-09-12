@@ -30,17 +30,35 @@ class MainActivity : ComponentActivity() {
         week02Variables()
     }
 }
+fun week02Functions(){
+    println("week02 Functions")
 
+    fun greet (name: String) = "Hello, $name!"
+
+    println(greet("Android Developer"))git
+}
 fun week02Variables(){
-    println("week02 Variables")
+//    println("week02 Variables")
 
-    val courseName = "Mobile Programming"
-    //courseName = "IoT Programming"
-    var week = 1
-    week = 2
+//    val courseName = "Mobile Programming"
+//    //courseName = "IoT Programming"
+//    var week = 1
+//    week = 2
 
-    println("course : $courseName")
-    println("week : $week")
+//    println("course : $courseName")
+//    println("week : $week")
+
+    println(" == Kotlin Variables == ")
+
+    val name="Android"
+    var version=8.1
+    println("Hello $name $version")
+
+    val age : Int = 23
+    val height : Double = 150.1
+    val isStudent : Boolean = true
+
+    println("Age : $age, height : $height, Student: $isStudent")
 }
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
