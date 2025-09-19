@@ -29,7 +29,20 @@ class MainActivity : ComponentActivity() {
         }
         //week02Variables()
         //week02Functions()
+        //week03Classes()
+        week03Collections()
 
+    }
+    private fun week03Collections() {
+        Log.d("Kotlinweek03", "== Kotlin Collections ==")
+
+        val fruits = listOf("apple", "banana", "orange")
+        // fruits.add("kiwi") 안됨
+        Log.d("Kotlinweek03", "Fruits : $fruits")
+
+        for (fruit in fruits) {
+            Log.d("Kotlinweek03", "Fruit : $fruit")
+        }
     }
         private fun week03Classes(){
             class Student{
